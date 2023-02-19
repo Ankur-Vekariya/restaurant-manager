@@ -24,10 +24,10 @@ const Navbar = () => {
       <Col span={8}>
         <Row style={{ justifyContent: "space-around" }}>
           <Button type="primary" style={{ backgroundColor: Colors.darkBlue }}>
-            Home
+            <a href={`/`}> Home</a>
           </Button>
           <Button type="primary" style={{ backgroundColor: Colors.darkBlue }}>
-            Products
+            <a href={`/product-list`}> Products</a>
           </Button>
           <Button type="primary" style={{ backgroundColor: Colors.darkBlue }}>
             Settings
