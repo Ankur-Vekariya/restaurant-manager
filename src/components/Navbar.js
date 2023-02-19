@@ -9,24 +9,30 @@ const { Title } = Typography;
 const Navbar = () => {
   return (
     <Row
-      style={{ backgroundColor: Colors.red, height: 80, alignItems: "center" }}
+      style={{
+        backgroundColor: Colors.yellow,
+        height: 80,
+        alignItems: "center",
+      }}
     >
-      <Col span={4}>Logo</Col>
+      <Col span={4} style={{ textAlign: "initial", fontSize: 50 }}>
+        <Title style={{ color: Colors.darkBlue }}>Logo</Title>
+      </Col>
       <Col span={12} style={{ textAlign: "initial", fontSize: 20 }}>
-        <Title style={{ color: Colors.blue }}>Restaurant Manager</Title>
+        <Title style={{ color: Colors.darkBlue }}>Restaurant Manager</Title>
       </Col>
       <Col span={8}>
         <Row style={{ justifyContent: "space-around" }}>
-          <Button type="primary" style={{ backgroundColor: Colors.magenta }}>
+          <Button type="primary" style={{ backgroundColor: Colors.darkBlue }}>
             Home
           </Button>
-          <Button type="primary" style={{ backgroundColor: Colors.magenta }}>
+          <Button type="primary" style={{ backgroundColor: Colors.darkBlue }}>
             Products
           </Button>
-          <Button type="primary" style={{ backgroundColor: Colors.magenta }}>
+          <Button type="primary" style={{ backgroundColor: Colors.darkBlue }}>
             Settings
           </Button>
-          <Button type="primary" style={{ backgroundColor: Colors.magenta }}>
+          <Button type="primary" style={{ backgroundColor: Colors.darkBlue }}>
             All Things
           </Button>
         </Row>
